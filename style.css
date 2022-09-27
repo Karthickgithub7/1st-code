@@ -329,3 +329,70 @@ body {
   align-items: center;
   text-decoration: none;
 }
+.homepage_service {
+  margin-top: 120px;
+  background: #0f1928;
+  padding: 78px 0;
+}
+.homepage_service .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.homepage_service h2,
+b {
+  color: #fff;
+  margin-bottom: 56px;
+  font-size: 80px;
+  line-height: 1.2;
+  font-weight: 800;
+}
+.service_title b {
+  color: #e8452a;
+}
+.service_title {
+  flex-grow: 1;
+}
+.service_link {
+  background-color: #e8452a;
+  padding: 0 20px;
+  height: 48px;
+  min-width: 160px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+.homepage_service .service_list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 655px;
+}
+.service {
+  width: 305px;
+  height: 200px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 16px;
+  padding: 16px 24px 24px;
+}
+.service:hover {
+  background-color: #2d3750;
+}
+.service a {
+  position: absolute;
+}
+.service img {
+  opacity: 0.2;
+  width: 80px;
+  height: 80px;
+  margin-left: 180px;
+}
+.service h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.33;
+  color: #fff;
+}
