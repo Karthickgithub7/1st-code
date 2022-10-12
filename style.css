@@ -12,28 +12,37 @@ body {
 .main {
   background: #0f1928;
   min-height: calc(100vh - 100px);
-  /* overflow: hidden; */
-  padding: 0 24px;
+  padding: 0 24px 0 0;
+  max-width: 100%;
 }
 .header {
   width: 100%;
   height: 100px;
   display: flex;
-  /* justify-content: space-between; */
-  /* position: fixed;  */
   align-items: center;
-  padding: 0 42px;
+  margin-left: 80px;
 }
-.nav a {
-  color: aliceblue;
-  text-decoration: none;
+.angle {
+  border: 0;
+  background: 0;
+  color: #fff;
+  font-size: large;
 }
 .nav {
   display: flex;
-  flex-wrap: wrap;
-  gap: 7%;
-  list-style: none;
-  margin-top: 40px;
+  gap: 55px;
+  margin-left: 120px;
+  width: 100%;
+}
+.button2 {
+  font-family: "montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.63;
+  color: #fff;
+  border: none;
+  background: none;
+  padding: 0 15px 0 0;
 }
 .head1 {
   color: #e8452a;
@@ -80,11 +89,15 @@ body {
   height: 48px;
   min-width: 160px;
   color: #fff;
+  font-family: "montserrat", sans-serif;
   font-size: 16px;
   font-weight: 500;
   opacity: 1;
-  margin-left: 1100px;
-  margin-top: -19px;
+  margin-left: 50px;
+  border: none;
+}
+.button:hover {
+  box-shadow: 0 0 12px 0 #e8452a;
 }
 .mergeimage {
   display: flex;
@@ -93,10 +106,7 @@ body {
   justify-content: center;
   margin-top: -89px;
 }
-/* .link:hover {
-  text-decoration: underline;
-  text-decoration-color: #e8452a;
-} */
+
 .angle2_center_image {
   position: absolute;
   top: calc(50% - 116px);
@@ -112,7 +122,10 @@ body {
   top: 60px;
   right: 50px;
 }
-
+.image1:hover,
+.image1:focus {
+  height: 160px;
+}
 .second_page {
   margin-top: 150px;
 }
@@ -184,6 +197,11 @@ body {
   text-align: center;
   padding: 0 16px;
   margin-top: 15px;
+}
+.cards:hover {
+  box-sizing: border-box;
+  box-shadow: 0 0 15px 0 #fff;
+  height: 0 300px 0 0;
 }
 .third_page {
   margin-top: 170px;
@@ -395,4 +413,83 @@ b {
   font-weight: 700;
   line-height: 1.33;
   color: #fff;
+}
+a.demo5:hover {
+  background-color: #2d3750;
+}
+.service_book {
+  background: url(https://angle2.agency/wp-content/themes/angle2/assets/img/services/bg-servaice-book.jpg)
+    no-repeat center/cover;
+}
+.service_book_one {
+  background: url(https://angle2.agency/wp-content/themes/angle2/assets/img/services/bg-servaice-book-path.png)
+    no-repeat center/cover;
+}
+.service_book .service_book_one .wrapper {
+  padding: 72px 0;
+}
+.service_book .service_book_one .wrapper h2 {
+  font-weight: 700;
+  color: #19233c;
+  margin-bottom: 16px;
+  font-size: 48px;
+  line-height: 1.33;
+}
+.service_book .service_book_one .wrapper h2 span {
+  color: #e8452a;
+}
+.service_book .service_book_one .wrapper p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #19233c;
+  line-height: 1.67;
+}
+.service_book .service_book_one .wrapper .des_action_btn {
+  margin-top: 48px;
+  background-color: #e8452a;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+}
+.number {
+  background: url(https://angle2.agency/wp-content/themes/angle2/assets/img/bg_numbers.svg)
+    no-repeat center/auto 100%;
+  padding: 67px 0 93px;
+}
+.number_wrapper {
+  max-width: 1120px;
+  margin: auto;
+}
+.number_wrapper h2 {
+  color: #fff;
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-bottom: 14px;
+}
+.number_list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+/* .number_list li {
+  display: flex;
+  flex-direction: column;
+} */
+.number_list li b {
+  color: #fff;
+  font-size: 140px;
+  font-weight: 800;
+  line-height: 0.8;
+  text-align: center;
+}
+.number_list li span {
+  color: #fff;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.78;
+  text-align: center;
 }
