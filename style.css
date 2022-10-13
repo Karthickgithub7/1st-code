@@ -25,7 +25,6 @@ body {
 .angle {
   border: 0;
   background: 0;
-  color: #fff;
   font-size: large;
 }
 .nav {
@@ -39,7 +38,6 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.63;
-  color: #fff;
   border: none;
   background: none;
   padding: 0 15px 0 0;
@@ -55,14 +53,12 @@ body {
   font-size: 88px;
 }
 .span {
-  color: #fff;
   display: block;
   position: relative;
 }
 .para {
   text-align: center;
   font-weight: bold;
-  color: #fff;
   font-size: 18px;
   opacity: 0.7;
   line-height: 1.78;
@@ -88,7 +84,6 @@ body {
   background-color: #e8452a;
   height: 48px;
   min-width: 160px;
-  color: #fff;
   font-family: "montserrat", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -190,7 +185,6 @@ body {
   min-width: 160px;
   font-size: 16px;
   font-weight: 500;
-  color: #fff;
   text-align: center;
 }
 .cards_button span {
@@ -358,7 +352,6 @@ body {
 }
 .homepage_service h2,
 b {
-  color: #fff;
   margin-bottom: 56px;
   font-size: 80px;
   line-height: 1.2;
@@ -378,7 +371,6 @@ b {
   font-size: 16px;
   font-weight: 500;
   text-align: center;
-  color: #fff;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
@@ -412,7 +404,6 @@ b {
   font-size: 24px;
   font-weight: 700;
   line-height: 1.33;
-  color: #fff;
 }
 a.demo5:hover {
   background-color: #2d3750;
@@ -447,14 +438,14 @@ a.demo5:hover {
 .service_book .service_book_one .wrapper .des_action_btn {
   margin-top: 48px;
   background-color: #e8452a;
-  color: #fff;
   border: none;
   cursor: pointer;
   font-size: 16px;
   font-weight: 500;
 }
 .number {
-  background: url(https://angle2.agency/wp-content/themes/angle2/assets/img/bg_numbers.svg)
+  background: #e8452a
+    url(https://angle2.agency/wp-content/themes/angle2/assets/img/bg_numbers.svg)
     no-repeat center/auto 100%;
   padding: 67px 0 93px;
 }
@@ -463,33 +454,89 @@ a.demo5:hover {
   margin: auto;
 }
 .number_wrapper h2 {
-  color: #fff;
   font-size: 80px;
   font-weight: 400;
   line-height: 1.4;
   margin-bottom: 14px;
 }
-.number_list {
+.number_list,
+.todo_list {
   display: flex;
   justify-content: space-between;
   list-style: none;
 }
-/* .number_list li {
+.number_list li {
   display: flex;
   flex-direction: column;
-} */
+}
 .number_list li b {
-  color: #fff;
   font-size: 140px;
   font-weight: 800;
   line-height: 0.8;
   text-align: center;
 }
 .number_list li span {
-  color: #fff;
-  margin-top: 10px;
+  margin-top: -45px;
   font-size: 18px;
   font-weight: 500;
   line-height: 1.78;
   text-align: center;
+}
+.angle,
+.button2,
+.button,
+.para,
+.span,
+.cards_button,
+.homepage_service h2,
+b,
+.service_link,
+.service h3,
+.service_book,
+.service_book_one,
+.wrapper,
+.des_action_btn,
+.number_wrapper h2,
+.number_list li b,
+.number_list span {
+  color: #fff;
+}
+.todo {
+  background-color: #cbd0d7;
+  padding: 80px 24px;
+}
+.todo_wrapper {
+  max-width: 1120px;
+  margin: auto;
+}
+.todo_wrapper h2 {
+  margin-bottom: 50px;
+  color: #19233c;
+  font-size: 80px;
+  line-height: 1.2;
+  font-weight: 800;
+}
+.todo_wrapper h2 span {
+  color: #e8452a;
+}
+.todo_list li h3 {
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 1.07;
+  margin-bottom: 29px;
+  color: rgba(15, 25, 40, 0.1);
+}
+.process {
+  margin-bottom: 32px;
+}
+.process img {
+  width: 80px;
+  height: 80px;
+}
+.process span {
+  display: block;
+  font-size: 18px;
+  line-height: 1.78;
+  color: #0f1928;
+  text-decoration: underline;
 }
