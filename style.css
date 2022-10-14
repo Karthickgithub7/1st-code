@@ -357,14 +357,15 @@ b {
   line-height: 1.2;
   font-weight: 800;
 }
-.service_title b {
+.service_title b,
+.service_link {
   color: #e8452a;
 }
 .service_title {
   flex-grow: 1;
 }
-.service_link {
-  background-color: #e8452a;
+.service_link,
+.more_button {
   padding: 0 20px;
   height: 48px;
   min-width: 160px;
@@ -498,14 +499,19 @@ b,
 .des_action_btn,
 .number_wrapper h2,
 .number_list li b,
-.number_list span {
+.number_list span,
+.more_button {
   color: #fff;
+  font-family: "Montserrat", sans-serif;
 }
 .todo {
   background-color: #cbd0d7;
   padding: 80px 24px;
 }
-.todo_wrapper {
+.todo_wrapper,
+.review_wrapper,
+.about_wrapper,
+.achievements_wrapper {
   max-width: 1120px;
   margin: auto;
 }
@@ -516,7 +522,9 @@ b,
   line-height: 1.2;
   font-weight: 800;
 }
-.todo_wrapper h2 span {
+.todo_wrapper h2 span,
+.review_wrapper h2 b,
+.about span {
   color: #e8452a;
 }
 .todo_list li h3 {
@@ -539,4 +547,200 @@ b,
   line-height: 1.78;
   color: #0f1928;
   text-decoration: underline;
+}
+.review {
+  margin-top: 160px;
+  font-family: "Montserrat", sans-serif;
+}
+.review_wrapper h2 {
+  color: #19233c;
+  margin-bottom: 70px;
+  font-size: 80px;
+  line-height: 1.2;
+  font-weight: 800;
+}
+.review_top {
+  margin-top: 110px;
+}
+.top_text {
+  margin-left: 40%;
+  /* position: relative; */
+  font-size: 24px;
+  font-weight: 500;
+  font-style: italic;
+  line-height: 1.67;
+  color: #19233c;
+  background: url(https://angle2.agency/wp-content/themes/angle2/assets/img/quotes.svg)
+    no-repeat;
+}
+.top_text p,
+.review_text p,
+.review_text ul {
+  margin-bottom: 1em;
+}
+.top_text p:last-child,
+.review_text p:last-child {
+  margin-bottom: 0;
+}
+.top_author {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  margin-left: 40%;
+}
+.photo {
+  margin-right: 24px;
+  width: 48px;
+  height: 48px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 1px solid #19233c;
+  display: none;
+}
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.author_name,
+.author_name b {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #19233c;
+}
+.author_name span {
+  margin-top: -54px;
+}
+.review_list {
+  margin-top: 72px;
+  display: flex;
+  justify-content: space-between;
+  /* -webkit-box-pack: justify; */
+  list-style-type: none;
+}
+.review_list > li {
+  width: calc(33.3333% - 33px);
+  border-top: 4px solid #e8e9eb;
+  padding-top: 16px;
+}
+.review_text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.63;
+  color: #19233c;
+  font-style: italic;
+}
+.review_text ul {
+  list-style: disc;
+  margin-left: 25px;
+}
+.review_author {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+}
+.more {
+  text-align: center;
+  margin-top: 120px;
+}
+.more_button {
+  background-color: #e8452a;
+  border: none;
+}
+.more img {
+  width: 32px;
+  height: 32px;
+  margin-right: 14px;
+}
+.about {
+  background: url(https://angle2.agency/wp-content/themes/angle2/assets/img/bg_about.jpg)
+    no-repeat center/cover;
+  padding: 80px 0;
+  margin-top: 200px;
+}
+.about h2 {
+  width: 670px;
+}
+.achievements h2,
+.about h2 {
+  line-height: 1.2;
+  margin-bottom: 0;
+  color: #19233c;
+  font-size: 80px;
+  font-weight: 800;
+}
+.about_text {
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 40px;
+  width: 467px;
+  line-height: 1.86;
+  color: #19233c;
+}
+.about_text p {
+  margin-bottom: 2em;
+}
+.achievements {
+  margin-top: 200px;
+}
+.achievements h2 {
+  text-align: center;
+}
+.achievements_list {
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -100px;
+  list-style-type: none;
+}
+.achievements_list > li {
+  width: calc(33.3333% - 100px);
+  margin-right: 100px;
+  margin-bottom: 56px;
+  padding: 56px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+}
+.achievements_list > button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  color: currentColor;
+  background: url(https://angle2.agency/wp-content/themes/angle2/assets/img/icon_link-b.svg)
+    no-repeat top 16px right 16px/22px 22px;
+}
+.achievements_list li img {
+  width: 170px;
+  height: 140px;
+  object-fit: contain;
+  backface-visibility: hidden;
+  position: relative;
+}
+.icon {
+  display: block;
+}
+.achievements_list b,
+.achievements_list span {
+  font-size: 16px;
+
+  text-align: center;
+  backface-visibility: hidden;
+  position: relative;
+  color: #2a2a2a;
+}
+.achievements_list b {
+  margin-top: 36px;
+  font-weight: 800;
+}
+.achievements_list span {
+  margin-top: 8px;
+  font-weight: 400;
 }
